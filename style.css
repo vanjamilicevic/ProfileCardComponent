@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Kumbh Sans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+  background-size: auto;
+  background-position: left -500px, right 500px;
+  background-repeat: no-repeat;
+}
+
+.main-container {
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.photo-container {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.photo {
+    margin-top: -50px;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: white;
+    border: 5px solid white;
+}
+
+.name-age-city-container {
+    text-align: center;
+}
+
+.name {
+    color: #2E3349;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.age,
+.city {
+    color: #6B7082;
+}
+
+.city {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.profile-information {
+    display: flex;
+    border-top: 1px solid hsl(227, 10%, 90%);
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.followers,
+.likes,
+.photos {
+    text-align: center;
+}
+
+.number {
+    font-size: 18px;
+    color: #2E3349;
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #6B7082;
+}
+
+/* -------------Media queries------------- */
+
+@media only screen and (max-width: 550px) {
+    body {
+        background-position: right top, left bottom;
+    }
+    .main-container {
+        max-width: 90%;
+    }
+}
